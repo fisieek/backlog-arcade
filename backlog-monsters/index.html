@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Backlog Monsters — a pixel-art creature collector</title>
+  <meta name="description" content="Walk through Backlog Valley and catch all eight backlog monsters with sticky notes. A tiny pixel-art game by Filip Stolarski." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect x='3' y='4' width='10' height='9' fill='%235B3DF5'/%3E%3Crect x='5' y='6' width='2' height='3' fill='%23fff'/%3E%3Crect x='9' y='6' width='2' height='3' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="frame">
+    <canvas id="screen" width="240" height="160" aria-label="Backlog Monsters. Arrow keys to walk, Space to interact, X for the Backlogdex."></canvas>
+  </div>
+  <div class="pad" aria-hidden="true">
+    <div class="pad__dir">
+      <button data-k="ArrowUp" class="u">▲</button><button data-k="ArrowLeft" class="l">◀</button><button data-k="ArrowRight" class="r">▶</button><button data-k="ArrowDown" class="d">▼</button>
+    </div>
+    <div class="pad__ab"><button data-k="x" class="b">DEX</button><button data-k=" " class="a">A</button></div>
+  </div>
+  <p class="help">Arrows / WASD walk · Space talk &amp; catch · X Backlogdex · made by <a href="https://github.com/fisieek" target="_blank" rel="noopener">Filip Stolarski</a></p>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Padel vs Filip</title>
+  <meta name="description" content="A tiny doodle-style padel game. Beat Filip to 7. Made by Filip Stolarski." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='26' fill='%23D7F23A' stroke='%23111' stroke-width='5'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <canvas id="game" aria-label="Padel game. Move with the mouse or arrow keys, serve with click or space."></canvas>
+    <div class="hud">
+      <p class="hud__help">Mouse / arrows to move · Click / Space to serve · First to 7 wins</p>
+      <div class="pill">
+        <span>Made by Filip Stolarski</span>
+        <a href="https://github.com/fisieek" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/filipstolarski/" target="_blank" rel="noopener">LinkedIn</a>
+        <button id="mute" type="button" aria-pressed="false">Sound on</button>
+      </div>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

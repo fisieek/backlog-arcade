@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sprint Racer — toy cars on a product owner's desk</title>
+  <meta name="description" content="A tiny top-down toy-car racer. Three laps = three sprints. Beat Scope Creep and Tech Debt. Made by Filip Stolarski." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='14' y='6' width='36' height='52' rx='10' fill='%23E8412E' stroke='%23111' stroke-width='4'/%3E%3Crect x='20' y='14' width='24' height='12' rx='3' fill='%23bfe3ff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game" aria-label="Sprint Racer. Arrow keys or WASD to drive, Space for handbrake, R to restart."></canvas>
+  <div class="touch" id="touch" aria-hidden="true">
+    <div class="touch__l"><button data-k="left">◀</button><button data-k="right">▶</button></div>
+    <div class="touch__r"><button data-k="brake">▼</button><button data-k="gas">▲</button></div>
+  </div>
+  <footer class="credit">
+    <span>Sprint Racer · made by Filip Stolarski</span>
+    <a href="https://github.com/fisieek" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/filipstolarski/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+  <script src="game.js"></script>
+</body>
+</html>

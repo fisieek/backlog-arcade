@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #1d1b2b; color: #e8e4f8; font-family: ui-monospace, Menlo, Consolas, monospace; overscroll-behavior: none; }
+body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 16px; min-height: 100%; }
+.frame { padding: 14px; background: #4b4a63; border-radius: 14px 14px 46px 14px; box-shadow: inset 0 0 0 4px #3a394f, 0 20px 40px rgba(0,0,0,.45); }
+#screen { display: block; image-rendering: pixelated; image-rendering: crisp-edges; width: min(92vw, 150vh - 60px, 960px); aspect-ratio: 3 / 2; height: auto; background: #000; border-radius: 4px; }
+.help { margin: 0; font-size: 12px; opacity: .75; text-align: center; }
+.help a { color: #ffd23f; }
+.pad { display: none; width: min(92vw, 520px); justify-content: space-between; align-items: center; user-select: none; -webkit-user-select: none; }
+.pad button { touch-action: none; border: 0; color: #fff; font: 700 18px ui-monospace, monospace; background: #333247; box-shadow: 0 4px 0 #15141f; }
+.pad button.on { transform: translateY(3px); box-shadow: 0 1px 0 #15141f; }
+.pad__dir { position: relative; width: 150px; height: 150px; }
+.pad__dir button { position: absolute; width: 50px; height: 50px; border-radius: 8px; }
+.pad__dir .u { left: 50px; top: 0; } .pad__dir .d { left: 50px; bottom: 0; } .pad__dir .l { left: 0; top: 50px; } .pad__dir .r { right: 0; top: 50px; }
+.pad__ab { display: flex; gap: 16px; align-items: center; transform: rotate(-18deg); }
+.pad__ab button { width: 66px; height: 66px; border-radius: 50%; background: #c2304f; }
+.pad__ab .b { width: 56px; height: 56px; background: #5b3df5; font-size: 13px; }
+@media (hover: none) and (pointer: coarse) { .pad { display: flex; } .help { display: none; } }
